@@ -1,0 +1,941 @@
+{
+  "unchanged_experiment": true,
+  "model_sha256": {
+    "baseline_mlp.npz": "67ffdade02468f8646800fb5577ae6cc55337ad97f90bb8960817f8a4863ba2d",
+    "robust_mlp.npz": "dd7ec9fd331d231bc1ef2bb7bdf2fe6c19c32b0394b5cc287642ef657868b5ea"
+  },
+  "image_splits": {
+    "baseline_train": {
+      "seed": 11001,
+      "n": 900,
+      "per_direction": [
+        300,
+        300,
+        300
+      ],
+      "profiles": {
+        "standard": 900,
+        "stress": 0
+      },
+      "sha256": "33efb52bc5496c8282435fbb10463674ea2a7e50f8f4ad7d88356c435c0df691",
+      "samples": {
+        "1": {
+          "i": 0,
+          "truth": 1,
+          "profile": "standard",
+          "file": "baseline_train_1.png"
+        },
+        "0": {
+          "i": 1,
+          "truth": 0,
+          "profile": "standard",
+          "file": "baseline_train_0.png"
+        },
+        "2": {
+          "i": 9,
+          "truth": 2,
+          "profile": "standard",
+          "file": "baseline_train_2.png"
+        }
+      }
+    },
+    "robust_train": {
+      "seed": 51001,
+      "n": 4500,
+      "per_direction": [
+        1500,
+        1500,
+        1500
+      ],
+      "profiles": {
+        "standard": 1791,
+        "stress": 2709
+      },
+      "sha256": "4f35ddb034eebf6e94e39c58a1df1272d22bc43a0a51c96b9124f1c4b341edb5",
+      "samples": {
+        "0": {
+          "i": 0,
+          "truth": 0,
+          "profile": "standard",
+          "file": "robust_train_0.png"
+        },
+        "2": {
+          "i": 2,
+          "truth": 2,
+          "profile": "stress",
+          "file": "robust_train_2.png"
+        },
+        "1": {
+          "i": 6,
+          "truth": 1,
+          "profile": "stress",
+          "file": "robust_train_1.png"
+        }
+      }
+    },
+    "validation": {
+      "seed": 52001,
+      "n": 600,
+      "per_direction": [
+        200,
+        200,
+        200
+      ],
+      "profiles": {
+        "standard": 228,
+        "stress": 372
+      },
+      "sha256": "dcb865faf8d64b4f836409c8f4fc4c8da95344f7e8c0e05d4c4035243583d91b",
+      "samples": {
+        "1": {
+          "i": 0,
+          "truth": 1,
+          "profile": "standard",
+          "file": "validation_1.png"
+        },
+        "2": {
+          "i": 1,
+          "truth": 2,
+          "profile": "standard",
+          "file": "validation_2.png"
+        },
+        "0": {
+          "i": 3,
+          "truth": 0,
+          "profile": "stress",
+          "file": "validation_0.png"
+        }
+      }
+    },
+    "test_standard": {
+      "seed": 53001,
+      "n": 900,
+      "per_direction": [
+        300,
+        300,
+        300
+      ],
+      "profiles": {
+        "standard": 900,
+        "stress": 0
+      },
+      "sha256": "aff94cbe468efa26f859fc435c70e98ff6863fb02bc13afaa08d304bcc7e563f",
+      "samples": {
+        "2": {
+          "i": 0,
+          "truth": 2,
+          "profile": "standard",
+          "file": "test_standard_2.png"
+        },
+        "0": {
+          "i": 1,
+          "truth": 0,
+          "profile": "standard",
+          "file": "test_standard_0.png"
+        },
+        "1": {
+          "i": 6,
+          "truth": 1,
+          "profile": "standard",
+          "file": "test_standard_1.png"
+        }
+      },
+      "models": {
+        "baseline": {
+          "correct": 900,
+          "n": 900
+        },
+        "robust": {
+          "correct": 900,
+          "n": 900
+        }
+      }
+    },
+    "test_stress": {
+      "seed": 54001,
+      "n": 900,
+      "per_direction": [
+        300,
+        300,
+        300
+      ],
+      "profiles": {
+        "standard": 0,
+        "stress": 900
+      },
+      "sha256": "5ee2db357a2d02faeb462a50153794d8484df0ba752f721482913b34fb7e22ea",
+      "samples": {
+        "1": {
+          "i": 0,
+          "truth": 1,
+          "profile": "stress",
+          "file": "test_stress_1.png"
+        },
+        "0": {
+          "i": 1,
+          "truth": 0,
+          "profile": "stress",
+          "file": "test_stress_0.png"
+        },
+        "2": {
+          "i": 2,
+          "truth": 2,
+          "profile": "stress",
+          "file": "test_stress_2.png"
+        }
+      },
+      "models": {
+        "baseline": {
+          "correct": 421,
+          "n": 900
+        },
+        "robust": {
+          "correct": 798,
+          "n": 900
+        }
+      }
+    }
+  },
+  "demo": {
+    "demo_baseline": {
+      "result": {
+        "seed": 63000,
+        "mode": "baseline_once",
+        "condition": "variable",
+        "completed": true,
+        "held": false,
+        "stopped_at": null,
+        "contacts": 0,
+        "duration_seconds": 69.4,
+        "path_length_m": 14.655863531464135,
+        "choices": [
+          0,
+          2,
+          1
+        ],
+        "observations": 3,
+        "rechecks": 0,
+        "final_position": [
+          0.0006391154691450007,
+          10.809184428490646
+        ],
+        "max_wheel_acceleration": 32.0,
+        "true_labels": [
+          0,
+          2,
+          0
+        ],
+        "wrong_decisions": 1,
+        "evaluated_decisions": 3,
+        "covered_entries": 0,
+        "correct_hold": false,
+        "all_signs_followed": false,
+        "route_success": false,
+        "scenario_success": false,
+        "unsafe_actions": 1
+      },
+      "observations": [
+        {
+          "index": 0,
+          "junction": 0,
+          "view": 0,
+          "time": 5.15,
+          "image": "camera/j1_v1.png",
+          "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+          "robot_pose": [
+            0.0019067797764555313,
+            0.8093299961365423,
+            1.5826011994017808
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.7562689185142517,
+            "probabilities": [
+              0.7562689185142517,
+              0.09112882614135742,
+              0.15260227024555206
+            ]
+          },
+          "contrast": 168.0,
+          "reliable": false,
+          "action": "GO",
+          "view_count": 1,
+          "choice": 0,
+          "asset": "demo_baseline_j1_v1.png"
+        },
+        {
+          "index": 1,
+          "junction": 1,
+          "view": 0,
+          "time": 29.25,
+          "image": "camera/j2_v1.png",
+          "image_sha256": "09ea12c7b723de930325dcc6187e5bbb4cd9cefdee266a97f579acfa03747119",
+          "robot_pose": [
+            -0.005037571011562746,
+            4.008543101512455,
+            1.5659783120537076
+          ],
+          "prediction": {
+            "label": 2,
+            "name": "RIGHT",
+            "confidence": 0.9209872484207153,
+            "probabilities": [
+              0.033768430352211,
+              0.04524431750178337,
+              0.9209872484207153
+            ]
+          },
+          "contrast": 170.0,
+          "reliable": false,
+          "action": "GO",
+          "view_count": 1,
+          "choice": 2,
+          "asset": "demo_baseline_j2_v1.png"
+        },
+        {
+          "index": 2,
+          "junction": 2,
+          "view": 0,
+          "time": 53.25,
+          "image": "camera/j3_v1.png",
+          "image_sha256": "905a9b69b54a135698c9b1852891740c63125719dd05e3c6a1b237fb0943c386",
+          "robot_pose": [
+            0.005960064451821096,
+            7.209183621857292,
+            1.5730647904276172
+          ],
+          "prediction": {
+            "label": 1,
+            "name": "STRAIGHT",
+            "confidence": 0.8890102505683899,
+            "probabilities": [
+              0.02698361873626709,
+              0.8890102505683899,
+              0.08400607109069824
+            ]
+          },
+          "contrast": 81.0,
+          "reliable": false,
+          "action": "GO",
+          "view_count": 1,
+          "choice": 1,
+          "asset": "demo_baseline_j3_v1.png"
+        }
+      ]
+    },
+    "demo_once": {
+      "result": {
+        "seed": 63000,
+        "mode": "robust_once",
+        "condition": "variable",
+        "completed": true,
+        "held": false,
+        "stopped_at": null,
+        "contacts": 0,
+        "duration_seconds": 78.85,
+        "path_length_m": 16.403187544310498,
+        "choices": [
+          0,
+          2,
+          0
+        ],
+        "observations": 3,
+        "rechecks": 0,
+        "final_position": [
+          0.0013136410833470913,
+          10.808898042737193
+        ],
+        "max_wheel_acceleration": 32.0,
+        "true_labels": [
+          0,
+          2,
+          0
+        ],
+        "wrong_decisions": 0,
+        "evaluated_decisions": 3,
+        "covered_entries": 0,
+        "correct_hold": false,
+        "all_signs_followed": true,
+        "route_success": true,
+        "scenario_success": true,
+        "unsafe_actions": 0
+      },
+      "observations": [
+        {
+          "index": 0,
+          "junction": 0,
+          "view": 0,
+          "time": 5.15,
+          "image": "camera/j1_v1.png",
+          "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+          "robot_pose": [
+            0.0019067797764555313,
+            0.8093299961365423,
+            1.5826011994017808
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.8287954330444336,
+            "probabilities": [
+              0.8287954330444336,
+              0.0028968367259949446,
+              0.16830772161483765
+            ]
+          },
+          "contrast": 168.0,
+          "reliable": false,
+          "action": "GO",
+          "view_count": 1,
+          "choice": 0,
+          "asset": "demo_once_j1_v1.png"
+        },
+        {
+          "index": 1,
+          "junction": 1,
+          "view": 0,
+          "time": 29.25,
+          "image": "camera/j2_v1.png",
+          "image_sha256": "09ea12c7b723de930325dcc6187e5bbb4cd9cefdee266a97f579acfa03747119",
+          "robot_pose": [
+            -0.005037571011562746,
+            4.008543101512455,
+            1.5659783120537076
+          ],
+          "prediction": {
+            "label": 2,
+            "name": "RIGHT",
+            "confidence": 0.9999992847442627,
+            "probabilities": [
+              7.436345867972705e-07,
+              2.219792492180739e-12,
+              0.9999992847442627
+            ]
+          },
+          "contrast": 170.0,
+          "reliable": true,
+          "action": "GO",
+          "view_count": 1,
+          "choice": 2,
+          "asset": "demo_once_j2_v1.png"
+        },
+        {
+          "index": 2,
+          "junction": 2,
+          "view": 0,
+          "time": 53.25,
+          "image": "camera/j3_v1.png",
+          "image_sha256": "905a9b69b54a135698c9b1852891740c63125719dd05e3c6a1b237fb0943c386",
+          "robot_pose": [
+            0.005960064451821096,
+            7.209183621857292,
+            1.5730647904276172
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.7434879541397095,
+            "probabilities": [
+              0.7434879541397095,
+              0.010170462541282177,
+              0.24634161591529846
+            ]
+          },
+          "contrast": 81.0,
+          "reliable": false,
+          "action": "GO",
+          "view_count": 1,
+          "choice": 0,
+          "asset": "demo_once_j3_v1.png"
+        }
+      ]
+    },
+    "demo_active": {
+      "result": {
+        "seed": 63000,
+        "mode": "active_recheck",
+        "condition": "variable",
+        "completed": true,
+        "held": false,
+        "stopped_at": null,
+        "contacts": 0,
+        "duration_seconds": 101.05,
+        "path_length_m": 17.661071793808976,
+        "choices": [
+          0,
+          2,
+          0
+        ],
+        "observations": 8,
+        "rechecks": 5,
+        "final_position": [
+          0.0013136961434229992,
+          10.808897804011437
+        ],
+        "max_wheel_acceleration": 32.0,
+        "true_labels": [
+          0,
+          2,
+          0
+        ],
+        "wrong_decisions": 0,
+        "evaluated_decisions": 3,
+        "covered_entries": 0,
+        "correct_hold": false,
+        "all_signs_followed": true,
+        "route_success": true,
+        "scenario_success": true,
+        "unsafe_actions": 0
+      },
+      "observations": [
+        {
+          "index": 0,
+          "junction": 0,
+          "view": 0,
+          "time": 5.15,
+          "image": "camera/j1_v1.png",
+          "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+          "robot_pose": [
+            0.0019067797764555313,
+            0.8093299961365423,
+            1.5826011994017808
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.8287954330444336,
+            "probabilities": [
+              0.8287954330444336,
+              0.0028968367259949446,
+              0.16830772161483765
+            ]
+          },
+          "contrast": 168.0,
+          "reliable": false,
+          "action": "RECHECK",
+          "view_count": 1,
+          "choice": null,
+          "asset": "demo_active_j1_v1.png"
+        },
+        {
+          "index": 1,
+          "junction": 0,
+          "view": 1,
+          "time": 9.6,
+          "image": "camera/j1_v2.png",
+          "image_sha256": "cda8ef5e80e317a9fc73a9a07a60575946c25aa2e03a68fc4fbbd5a35bc8a0ee",
+          "robot_pose": [
+            -0.19644241987323158,
+            1.048706302235325,
+            1.5611743218845495
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.9999998807907104,
+            "probabilities": [
+              0.9999998807907104,
+              5.0049135503853724e-15,
+              8.848650878690023e-08
+            ]
+          },
+          "contrast": 209.0,
+          "reliable": true,
+          "action": "RECHECK",
+          "view_count": 2,
+          "choice": null,
+          "asset": "demo_active_j1_v2.png"
+        },
+        {
+          "index": 2,
+          "junction": 0,
+          "view": 2,
+          "time": 15.15,
+          "image": "camera/j1_v3.png",
+          "image_sha256": "952c45193e506d821289eb9d79b9ca24926fc4df504b450c46a2e8db06587799",
+          "robot_pose": [
+            0.18885512871525517,
+            1.1523786780644156,
+            1.5796299814767423
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 1.0,
+            "probabilities": [
+              1.0,
+              2.9352978110196853e-15,
+              2.6374020745123516e-09
+            ]
+          },
+          "contrast": 201.0,
+          "reliable": true,
+          "action": "GO",
+          "view_count": 3,
+          "choice": 0,
+          "asset": "demo_active_j1_v3.png"
+        },
+        {
+          "index": 3,
+          "junction": 1,
+          "view": 0,
+          "time": 38.5,
+          "image": "camera/j2_v1.png",
+          "image_sha256": "09ea12c7b723de930325dcc6187e5bbb4cd9cefdee266a97f579acfa03747119",
+          "robot_pose": [
+            -0.005037666447670345,
+            4.008542870391285,
+            1.5659783338529127
+          ],
+          "prediction": {
+            "label": 2,
+            "name": "RIGHT",
+            "confidence": 0.9999992847442627,
+            "probabilities": [
+              7.436345867972705e-07,
+              2.219792492180739e-12,
+              0.9999992847442627
+            ]
+          },
+          "contrast": 170.0,
+          "reliable": true,
+          "action": "RECHECK",
+          "view_count": 1,
+          "choice": null,
+          "asset": "demo_active_j2_v1.png"
+        },
+        {
+          "index": 4,
+          "junction": 1,
+          "view": 1,
+          "time": 42.95,
+          "image": "camera/j2_v2.png",
+          "image_sha256": "6aaaa79ba71fa91474ee32e9893c6bc978f6d82f4bc24a482fd4dae7181e09c6",
+          "robot_pose": [
+            -0.19772430967012353,
+            4.248485249988281,
+            1.5602458770230916
+          ],
+          "prediction": {
+            "label": 2,
+            "name": "RIGHT",
+            "confidence": 1.0,
+            "probabilities": [
+              4.273932596721153e-10,
+              1.580117262619911e-14,
+              1.0
+            ]
+          },
+          "contrast": 189.0,
+          "reliable": true,
+          "action": "GO",
+          "view_count": 2,
+          "choice": 2,
+          "asset": "demo_active_j2_v2.png"
+        },
+        {
+          "index": 5,
+          "junction": 2,
+          "view": 0,
+          "time": 66.25,
+          "image": "camera/j3_v1.png",
+          "image_sha256": "905a9b69b54a135698c9b1852891740c63125719dd05e3c6a1b237fb0943c386",
+          "robot_pose": [
+            0.005962239070174526,
+            7.209183617132905,
+            1.5730663513158625
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.7434879541397095,
+            "probabilities": [
+              0.7434879541397095,
+              0.010170462541282177,
+              0.24634161591529846
+            ]
+          },
+          "contrast": 81.0,
+          "reliable": false,
+          "action": "RECHECK",
+          "view_count": 1,
+          "choice": null,
+          "asset": "demo_active_j3_v1.png"
+        },
+        {
+          "index": 6,
+          "junction": 2,
+          "view": 1,
+          "time": 70.7,
+          "image": "camera/j3_v2.png",
+          "image_sha256": "02b81d9c28bb8510ee6f84e7915f45ee6982c4ea0fbcdb133057e27f44e914a2",
+          "robot_pose": [
+            -0.19744072279350497,
+            7.450037502444535,
+            1.5619252814610096
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 1.0,
+            "probabilities": [
+              1.0,
+              1.1371437819152064e-10,
+              1.918007441759073e-08
+            ]
+          },
+          "contrast": 207.0,
+          "reliable": true,
+          "action": "RECHECK",
+          "view_count": 2,
+          "choice": null,
+          "asset": "demo_active_j3_v2.png"
+        },
+        {
+          "index": 7,
+          "junction": 2,
+          "view": 2,
+          "time": 76.2,
+          "image": "camera/j3_v3.png",
+          "image_sha256": "9ea7f4658f0ed1d3500485b02e47b6fe360eb8dc6294fb54e3aa602c9936404c",
+          "robot_pose": [
+            0.18867117267384403,
+            7.55252390579483,
+            1.5794048173213309
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 1.0,
+            "probabilities": [
+              1.0,
+              7.785082474509597e-12,
+              6.654881534728929e-09
+            ]
+          },
+          "contrast": 204.0,
+          "reliable": true,
+          "action": "GO",
+          "view_count": 3,
+          "choice": 0,
+          "asset": "demo_active_j3_v3.png"
+        }
+      ]
+    },
+    "demo_hold": {
+      "result": {
+        "seed": 63000,
+        "mode": "active_recheck",
+        "condition": "covered",
+        "completed": false,
+        "held": true,
+        "stopped_at": 1,
+        "contacts": 0,
+        "duration_seconds": 49.6,
+        "path_length_m": 7.370109518921305,
+        "choices": [
+          0
+        ],
+        "observations": 6,
+        "rechecks": 4,
+        "final_position": [
+          0.18863693584508748,
+          4.352329731736593
+        ],
+        "max_wheel_acceleration": 32.0,
+        "true_labels": [
+          0,
+          2,
+          0
+        ],
+        "wrong_decisions": 0,
+        "evaluated_decisions": 1,
+        "covered_entries": 0,
+        "correct_hold": true,
+        "all_signs_followed": false,
+        "route_success": false,
+        "scenario_success": true,
+        "unsafe_actions": 0
+      },
+      "observations": [
+        {
+          "index": 0,
+          "junction": 0,
+          "view": 0,
+          "time": 5.15,
+          "image": "camera/j1_v1.png",
+          "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+          "robot_pose": [
+            0.0019067797764555313,
+            0.8093299961365423,
+            1.5826011994017808
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.8287954330444336,
+            "probabilities": [
+              0.8287954330444336,
+              0.0028968367259949446,
+              0.16830772161483765
+            ]
+          },
+          "contrast": 168.0,
+          "reliable": false,
+          "action": "RECHECK",
+          "view_count": 1,
+          "choice": null,
+          "asset": "demo_hold_j1_v1.png"
+        },
+        {
+          "index": 1,
+          "junction": 0,
+          "view": 1,
+          "time": 9.6,
+          "image": "camera/j1_v2.png",
+          "image_sha256": "cda8ef5e80e317a9fc73a9a07a60575946c25aa2e03a68fc4fbbd5a35bc8a0ee",
+          "robot_pose": [
+            -0.19644241987323158,
+            1.048706302235325,
+            1.5611743218845495
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.9999998807907104,
+            "probabilities": [
+              0.9999998807907104,
+              5.0049135503853724e-15,
+              8.848650878690023e-08
+            ]
+          },
+          "contrast": 209.0,
+          "reliable": true,
+          "action": "RECHECK",
+          "view_count": 2,
+          "choice": null,
+          "asset": "demo_hold_j1_v2.png"
+        },
+        {
+          "index": 2,
+          "junction": 0,
+          "view": 2,
+          "time": 15.15,
+          "image": "camera/j1_v3.png",
+          "image_sha256": "952c45193e506d821289eb9d79b9ca24926fc4df504b450c46a2e8db06587799",
+          "robot_pose": [
+            0.18885512871525517,
+            1.1523786780644156,
+            1.5796299814767423
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 1.0,
+            "probabilities": [
+              1.0,
+              2.9352978110196853e-15,
+              2.6374020745123516e-09
+            ]
+          },
+          "contrast": 201.0,
+          "reliable": true,
+          "action": "GO",
+          "view_count": 3,
+          "choice": 0,
+          "asset": "demo_hold_j1_v3.png"
+        },
+        {
+          "index": 3,
+          "junction": 1,
+          "view": 0,
+          "time": 38.5,
+          "image": "camera/j2_v1.png",
+          "image_sha256": "19c462adda9b0bf61e74a9ba1a549aa0125672b861a408b0f23a06cff212d560",
+          "robot_pose": [
+            -0.005037666447670345,
+            4.008542870391285,
+            1.5659783338529127
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.77605140209198,
+            "probabilities": [
+              0.77605140209198,
+              0.04210321605205536,
+              0.18184541165828705
+            ]
+          },
+          "contrast": 7.0,
+          "reliable": false,
+          "action": "RECHECK",
+          "view_count": 1,
+          "choice": null,
+          "asset": "demo_hold_j2_v1.png"
+        },
+        {
+          "index": 4,
+          "junction": 1,
+          "view": 1,
+          "time": 42.95,
+          "image": "camera/j2_v2.png",
+          "image_sha256": "d781e2a7153befe5a58771a064560f64da588a02bb9d5be390546762a323de0f",
+          "robot_pose": [
+            -0.19772430967012353,
+            4.248485249988281,
+            1.5602458770230916
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.7039982676506042,
+            "probabilities": [
+              0.7039982676506042,
+              0.01848827302455902,
+              0.27751344442367554
+            ]
+          },
+          "contrast": 7.0,
+          "reliable": false,
+          "action": "RECHECK",
+          "view_count": 2,
+          "choice": null,
+          "asset": "demo_hold_j2_v2.png"
+        },
+        {
+          "index": 5,
+          "junction": 1,
+          "view": 2,
+          "time": 48.5,
+          "image": "camera/j2_v3.png",
+          "image_sha256": "2819e213f1a6fd5c157c8e28d20e4f83c103804357a5fbd75ecb7728f890f477",
+          "robot_pose": [
+            0.18863678295832229,
+            4.3523418307465676,
+            1.5796340972691034
+          ],
+          "prediction": {
+            "label": 0,
+            "name": "LEFT",
+            "confidence": 0.8003228306770325,
+            "probabilities": [
+              0.8003228306770325,
+              0.07193071395158768,
+              0.12774638831615448
+            ]
+          },
+          "contrast": 7.0,
+          "reliable": false,
+          "action": "HOLD",
+          "view_count": 3,
+          "choice": null,
+          "asset": "demo_hold_j2_v3.png"
+        }
+      ]
+    }
+  },
+  "first_view_identical_across_three_demos": true,
+  "important_interpretation": "demo_once already succeeds at seed 63000; A-vs-D video is not a pure re-observation ablation."
+}

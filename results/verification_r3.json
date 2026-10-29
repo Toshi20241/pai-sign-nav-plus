@@ -1,0 +1,75 @@
+{
+  "edition": "R3",
+  "verification": {
+    "passed": true,
+    "missions_audited": 480,
+    "observations_reinferred": 1673,
+    "unique_sensor_views": 762,
+    "matched_policy_sensor_identity": true,
+    "outcome_counters_recomputed": true,
+    "aggregate_tables_recomputed": true,
+    "closed_loop_replays": [
+      "demo_baseline",
+      "demo_once",
+      "demo_active",
+      "demo_hold"
+    ],
+    "bounded_wheel_acceleration": true,
+    "policy_interface": "image pixels only; no world or target label",
+    "seconds": 5.4571055199999705
+  },
+  "baseline_retraining": {
+    "training_images": 900,
+    "epochs": 60,
+    "max_weight_difference": 0.0,
+    "matches": true
+  },
+  "image_tests": {
+    "test_standard": {
+      "baseline": {
+        "correct": 900,
+        "n": 900
+      },
+      "robust": {
+        "correct": 900,
+        "n": 900
+      }
+    },
+    "test_stress": {
+      "baseline": {
+        "correct": 421,
+        "n": 900
+      },
+      "robust": {
+        "correct": 798,
+        "n": 900
+      }
+    }
+  },
+  "counts": {
+    "baseline_once": {
+      "runs": 120,
+      "observations": 360
+    },
+    "robust_once": {
+      "runs": 120,
+      "observations": 360
+    },
+    "robust_gate": {
+      "runs": 120,
+      "observations": 258
+    },
+    "active_recheck": {
+      "runs": 120,
+      "observations": 695
+    }
+  },
+  "tests": "...........................                                              [100%]\n27 passed in 0.16s",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "scope": "Production container checks only. No real hardware or user Mac/Colab execution is claimed.",
+  "unchanged_simulation": "Core model/controller/benchmark unchanged from R2.",
+  "online_accounts_changed": false
+}

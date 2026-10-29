@@ -1,0 +1,18 @@
+{
+  "vision.py": true,
+  "world.py": true,
+  "policy.py": true,
+  "drive.py": true,
+  "mission.py": true,
+  "train.py": true,
+  "train_baseline.py": true,
+  "experiments.py": true,
+  "verify.py": true,
+  "main.py": true,
+  "models/baseline_mlp.npz": true,
+  "models/robust_mlp.npz": true,
+  "results/benchmark/protocol.json": true,
+  "results/benchmark/trials.json": true,
+  "results/benchmark/trials.csv": true,
+  "results/benchmark/summary.json": true
+}

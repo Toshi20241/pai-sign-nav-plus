@@ -14,5 +14,5 @@
   ],
   "bounded_wheel_acceleration": true,
   "policy_interface": "image pixels only; no world or target label",
-  "seconds": 3.2148846990000948
+  "seconds": 5.4571055199999705
 }

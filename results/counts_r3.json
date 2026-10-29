@@ -1,0 +1,18 @@
+{
+  "baseline_once": {
+    "runs": 120,
+    "observations": 360
+  },
+  "robust_once": {
+    "runs": 120,
+    "observations": 360
+  },
+  "robust_gate": {
+    "runs": 120,
+    "observations": 258
+  },
+  "active_recheck": {
+    "runs": 120,
+    "observations": 695
+  }
+}

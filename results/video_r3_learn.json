@@ -1,0 +1,101 @@
+{
+  "edition": "R3",
+  "kind": "learn",
+  "duration": 510.0,
+  "fps": 12,
+  "width": 1920,
+  "height": 1080,
+  "audio": "none; Japanese on-screen explanation",
+  "sections": [
+    {
+      "section": "intro",
+      "start": 0.0,
+      "end": 18.0,
+      "playback": "still"
+    },
+    {
+      "section": "rule",
+      "start": 18.0,
+      "end": 48.0,
+      "playback": "still"
+    },
+    {
+      "section": "data",
+      "start": 48.0,
+      "end": 80.0,
+      "playback": "still"
+    },
+    {
+      "section": "ways",
+      "start": 80.0,
+      "end": 112.0,
+      "playback": "still"
+    },
+    {
+      "section": "environment",
+      "start": 112.0,
+      "end": 142.0,
+      "playback": "still"
+    },
+    {
+      "section": "run",
+      "start": 142.0,
+      "end": 244.0,
+      "playback": 1
+    },
+    {
+      "section": "decision",
+      "start": 244.0,
+      "end": 274.0,
+      "playback": "still"
+    },
+    {
+      "section": "stop",
+      "start": 274.0,
+      "end": 304.0,
+      "playback": 1
+    },
+    {
+      "section": "results",
+      "start": 304.0,
+      "end": 336.0,
+      "playback": "still"
+    },
+    {
+      "section": "limits",
+      "start": 336.0,
+      "end": 366.0,
+      "playback": "still"
+    },
+    {
+      "section": "counts",
+      "start": 366.0,
+      "end": 398.0,
+      "playback": "still"
+    },
+    {
+      "section": "audits",
+      "start": 398.0,
+      "end": 430.0,
+      "playback": "still"
+    },
+    {
+      "section": "weights",
+      "start": 430.0,
+      "end": 462.0,
+      "playback": "still"
+    },
+    {
+      "section": "tests",
+      "start": 462.0,
+      "end": 494.0,
+      "playback": "still"
+    },
+    {
+      "section": "end",
+      "start": 494.0,
+      "end": 510.0,
+      "playback": "still"
+    }
+  ]
+}
