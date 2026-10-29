@@ -1,0 +1,29 @@
+{
+  "seed_start": 63000,
+  "count_per_condition": 30,
+  "conditions": [
+    "normal",
+    "variable",
+    "covered",
+    "persistent"
+  ],
+  "policies": [
+    "baseline_once",
+    "robust_once",
+    "robust_gate",
+    "active_recheck"
+  ],
+  "gate": {
+    "threshold": 0.95,
+    "contrast_min": 25.0,
+    "max_views": 3,
+    "required_agreement": 2
+  },
+  "pairing": "same seed: same initial pose, wheel gains and per-position images across all policies",
+  "total_runs": 480,
+  "selection": "every seed included; persistent condition added as a limitation test with model and gate unchanged",
+  "checkpoints": {
+    "baseline_mlp.npz": "67ffdade02468f8646800fb5577ae6cc55337ad97f90bb8960817f8a4863ba2d",
+    "robust_mlp.npz": "dd7ec9fd331d231bc1ef2bb7bdf2fe6c19c32b0394b5cc287642ef657868b5ea"
+  }
+}

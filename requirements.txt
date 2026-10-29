@@ -1,0 +1,5 @@
+-r requirements-core.txt
+scikit-learn==1.8.0
+reportlab==4.4.9
+pytest==9.0.2
+# Video generation additionally needs the ffmpeg executable and a local CJK font.

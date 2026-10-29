@@ -1,0 +1,43 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 20,
+  "frames": 2269,
+  "duration_seconds": 113.45,
+  "sections": [
+    {
+      "name": "intro",
+      "seconds": 8,
+      "playback": "still caption"
+    },
+    {
+      "name": "matched_variable",
+      "seconds": 50.6,
+      "simulation_seconds": 101.05,
+      "playback": 2
+    },
+    {
+      "name": "observations",
+      "seconds": 10,
+      "playback": "still caption"
+    },
+    {
+      "name": "covered_panel",
+      "seconds": 24.85,
+      "simulation_seconds": 49.6,
+      "playback": 2
+    },
+    {
+      "name": "hold",
+      "seconds": 4,
+      "playback": "still caption"
+    },
+    {
+      "name": "summary",
+      "seconds": 16,
+      "playback": "still caption"
+    }
+  ],
+  "audio": "none; Japanese explanatory captions",
+  "source": "saved wheel-kinematics telemetry; no scripted robot animation"
+}

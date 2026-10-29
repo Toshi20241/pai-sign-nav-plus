@@ -1,0 +1,537 @@
+{
+  "schema_version": 2,
+  "result": {
+    "seed": 63000,
+    "mode": "active_recheck",
+    "condition": "variable",
+    "completed": true,
+    "held": false,
+    "stopped_at": null,
+    "contacts": 0,
+    "duration_seconds": 101.05,
+    "path_length_m": 17.661071793808976,
+    "choices": [
+      0,
+      2,
+      0
+    ],
+    "observations": 8,
+    "rechecks": 5,
+    "final_position": [
+      0.0013136961434229992,
+      10.808897804011437
+    ],
+    "max_wheel_acceleration": 32.0,
+    "true_labels": [
+      0,
+      2,
+      0
+    ],
+    "wrong_decisions": 0,
+    "evaluated_decisions": 3,
+    "covered_entries": 0,
+    "correct_hold": false,
+    "all_signs_followed": true,
+    "route_success": true,
+    "scenario_success": true,
+    "unsafe_actions": 0
+  },
+  "gate": {
+    "threshold": 0.95,
+    "contrast_min": 25.0,
+    "max_views": 3,
+    "required_agreement": 2
+  },
+  "events": [
+    {
+      "time": 0.0,
+      "event": "START",
+      "junction": 0
+    },
+    {
+      "time": 4.7,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 0
+    },
+    {
+      "time": 5.15,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 0,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.8287954330444336,
+        "probabilities": [
+          0.8287954330444336,
+          0.0028968367259949446,
+          0.16830772161483765
+        ]
+      }
+    },
+    {
+      "time": 6.2,
+      "event": "RECHECK_MOVE",
+      "junction": 0,
+      "view": 1
+    },
+    {
+      "time": 8.3,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 1
+    },
+    {
+      "time": 9.6,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 1,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.9999998807907104,
+        "probabilities": [
+          0.9999998807907104,
+          5.0049135503853724e-15,
+          8.848650878690023e-08
+        ]
+      }
+    },
+    {
+      "time": 10.65,
+      "event": "RECHECK_MOVE",
+      "junction": 0,
+      "view": 2
+    },
+    {
+      "time": 13.5,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 2
+    },
+    {
+      "time": 15.15,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 2,
+      "action": "GO",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          2.9352978110196853e-15,
+          2.6374020745123516e-09
+        ]
+      }
+    },
+    {
+      "time": 16.15,
+      "event": "COMMIT_BRANCH",
+      "junction": 0,
+      "choice": 0
+    },
+    {
+      "time": 37.85,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 1,
+      "view": 0
+    },
+    {
+      "time": 38.5,
+      "event": "OBSERVE",
+      "junction": 1,
+      "view": 0,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 2,
+        "name": "RIGHT",
+        "confidence": 0.9999992847442627,
+        "probabilities": [
+          7.436345867972705e-07,
+          2.219792492180739e-12,
+          0.9999992847442627
+        ]
+      }
+    },
+    {
+      "time": 39.55,
+      "event": "RECHECK_MOVE",
+      "junction": 1,
+      "view": 1
+    },
+    {
+      "time": 41.65,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 1,
+      "view": 1
+    },
+    {
+      "time": 42.95,
+      "event": "OBSERVE",
+      "junction": 1,
+      "view": 1,
+      "action": "GO",
+      "prediction": {
+        "label": 2,
+        "name": "RIGHT",
+        "confidence": 1.0,
+        "probabilities": [
+          4.273932596721153e-10,
+          1.580117262619911e-14,
+          1.0
+        ]
+      }
+    },
+    {
+      "time": 44.0,
+      "event": "COMMIT_BRANCH",
+      "junction": 1,
+      "choice": 2
+    },
+    {
+      "time": 65.55,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 2,
+      "view": 0
+    },
+    {
+      "time": 66.25,
+      "event": "OBSERVE",
+      "junction": 2,
+      "view": 0,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.7434879541397095,
+        "probabilities": [
+          0.7434879541397095,
+          0.010170462541282177,
+          0.24634161591529846
+        ]
+      }
+    },
+    {
+      "time": 67.25,
+      "event": "RECHECK_MOVE",
+      "junction": 2,
+      "view": 1
+    },
+    {
+      "time": 69.4,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 2,
+      "view": 1
+    },
+    {
+      "time": 70.7,
+      "event": "OBSERVE",
+      "junction": 2,
+      "view": 1,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          1.1371437819152064e-10,
+          1.918007441759073e-08
+        ]
+      }
+    },
+    {
+      "time": 71.7,
+      "event": "RECHECK_MOVE",
+      "junction": 2,
+      "view": 2
+    },
+    {
+      "time": 74.55,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 2,
+      "view": 2
+    },
+    {
+      "time": 76.2,
+      "event": "OBSERVE",
+      "junction": 2,
+      "view": 2,
+      "action": "GO",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          7.785082474509597e-12,
+          6.654881534728929e-09
+        ]
+      }
+    },
+    {
+      "time": 77.2,
+      "event": "COMMIT_BRANCH",
+      "junction": 2,
+      "choice": 0
+    },
+    {
+      "time": 100.55,
+      "event": "GOAL_REACHED",
+      "junction": 3
+    },
+    {
+      "time": 101.05,
+      "event": "COMPLETE",
+      "junction": 3
+    }
+  ],
+  "observations": [
+    {
+      "index": 0,
+      "junction": 0,
+      "view": 0,
+      "time": 5.15,
+      "image": "camera/j1_v1.png",
+      "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+      "robot_pose": [
+        0.0019067797764555313,
+        0.8093299961365423,
+        1.5826011994017808
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.8287954330444336,
+        "probabilities": [
+          0.8287954330444336,
+          0.0028968367259949446,
+          0.16830772161483765
+        ]
+      },
+      "contrast": 168.0,
+      "reliable": false,
+      "action": "RECHECK",
+      "view_count": 1,
+      "choice": null
+    },
+    {
+      "index": 1,
+      "junction": 0,
+      "view": 1,
+      "time": 9.6,
+      "image": "camera/j1_v2.png",
+      "image_sha256": "cda8ef5e80e317a9fc73a9a07a60575946c25aa2e03a68fc4fbbd5a35bc8a0ee",
+      "robot_pose": [
+        -0.19644241987323158,
+        1.048706302235325,
+        1.5611743218845495
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.9999998807907104,
+        "probabilities": [
+          0.9999998807907104,
+          5.0049135503853724e-15,
+          8.848650878690023e-08
+        ]
+      },
+      "contrast": 209.0,
+      "reliable": true,
+      "action": "RECHECK",
+      "view_count": 2,
+      "choice": null
+    },
+    {
+      "index": 2,
+      "junction": 0,
+      "view": 2,
+      "time": 15.15,
+      "image": "camera/j1_v3.png",
+      "image_sha256": "952c45193e506d821289eb9d79b9ca24926fc4df504b450c46a2e8db06587799",
+      "robot_pose": [
+        0.18885512871525517,
+        1.1523786780644156,
+        1.5796299814767423
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          2.9352978110196853e-15,
+          2.6374020745123516e-09
+        ]
+      },
+      "contrast": 201.0,
+      "reliable": true,
+      "action": "GO",
+      "view_count": 3,
+      "choice": 0
+    },
+    {
+      "index": 3,
+      "junction": 1,
+      "view": 0,
+      "time": 38.5,
+      "image": "camera/j2_v1.png",
+      "image_sha256": "09ea12c7b723de930325dcc6187e5bbb4cd9cefdee266a97f579acfa03747119",
+      "robot_pose": [
+        -0.005037666447670345,
+        4.008542870391285,
+        1.5659783338529127
+      ],
+      "prediction": {
+        "label": 2,
+        "name": "RIGHT",
+        "confidence": 0.9999992847442627,
+        "probabilities": [
+          7.436345867972705e-07,
+          2.219792492180739e-12,
+          0.9999992847442627
+        ]
+      },
+      "contrast": 170.0,
+      "reliable": true,
+      "action": "RECHECK",
+      "view_count": 1,
+      "choice": null
+    },
+    {
+      "index": 4,
+      "junction": 1,
+      "view": 1,
+      "time": 42.95,
+      "image": "camera/j2_v2.png",
+      "image_sha256": "6aaaa79ba71fa91474ee32e9893c6bc978f6d82f4bc24a482fd4dae7181e09c6",
+      "robot_pose": [
+        -0.19772430967012353,
+        4.248485249988281,
+        1.5602458770230916
+      ],
+      "prediction": {
+        "label": 2,
+        "name": "RIGHT",
+        "confidence": 1.0,
+        "probabilities": [
+          4.273932596721153e-10,
+          1.580117262619911e-14,
+          1.0
+        ]
+      },
+      "contrast": 189.0,
+      "reliable": true,
+      "action": "GO",
+      "view_count": 2,
+      "choice": 2
+    },
+    {
+      "index": 5,
+      "junction": 2,
+      "view": 0,
+      "time": 66.25,
+      "image": "camera/j3_v1.png",
+      "image_sha256": "905a9b69b54a135698c9b1852891740c63125719dd05e3c6a1b237fb0943c386",
+      "robot_pose": [
+        0.005962239070174526,
+        7.209183617132905,
+        1.5730663513158625
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.7434879541397095,
+        "probabilities": [
+          0.7434879541397095,
+          0.010170462541282177,
+          0.24634161591529846
+        ]
+      },
+      "contrast": 81.0,
+      "reliable": false,
+      "action": "RECHECK",
+      "view_count": 1,
+      "choice": null
+    },
+    {
+      "index": 6,
+      "junction": 2,
+      "view": 1,
+      "time": 70.7,
+      "image": "camera/j3_v2.png",
+      "image_sha256": "02b81d9c28bb8510ee6f84e7915f45ee6982c4ea0fbcdb133057e27f44e914a2",
+      "robot_pose": [
+        -0.19744072279350497,
+        7.450037502444535,
+        1.5619252814610096
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          1.1371437819152064e-10,
+          1.918007441759073e-08
+        ]
+      },
+      "contrast": 207.0,
+      "reliable": true,
+      "action": "RECHECK",
+      "view_count": 2,
+      "choice": null
+    },
+    {
+      "index": 7,
+      "junction": 2,
+      "view": 2,
+      "time": 76.2,
+      "image": "camera/j3_v3.png",
+      "image_sha256": "9ea7f4658f0ed1d3500485b02e47b6fe360eb8dc6294fb54e3aa602c9936404c",
+      "robot_pose": [
+        0.18867117267384403,
+        7.55252390579483,
+        1.5794048173213309
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          7.785082474509597e-12,
+          6.654881534728929e-09
+        ]
+      },
+      "contrast": 204.0,
+      "reliable": true,
+      "action": "GO",
+      "view_count": 3,
+      "choice": 0
+    }
+  ],
+  "simulation": {
+    "model": "no-slip planar differential drive with wheel lag and acceleration limit",
+    "integration_step_seconds": 0.01,
+    "control_step_seconds": 0.05,
+    "sensor": "synthetic sign patches at known observation positions; not a perspective camera",
+    "visibility": "variable: stress at view 0, standard at views 1/2; covered: panel 2 blank at every view; persistent: stress at all views",
+    "localization": "exact simulator pose",
+    "collision": "circle-rectangle overlap; stop on contact",
+    "wheel_radius_m": 0.055,
+    "axle_m": 0.29,
+    "wheel_tau_seconds": 0.12,
+    "wheel_acceleration_limit_rad_s2": 32.0,
+    "wheel_gain": [
+      1.0140181667086683,
+      0.9919733788937628
+    ]
+  }
+}

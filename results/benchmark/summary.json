@@ -1,0 +1,354 @@
+{
+  "protocol": {
+    "seed_start": 63000,
+    "count_per_condition": 30,
+    "conditions": [
+      "normal",
+      "variable",
+      "covered",
+      "persistent"
+    ],
+    "policies": [
+      "baseline_once",
+      "robust_once",
+      "robust_gate",
+      "active_recheck"
+    ],
+    "gate": {
+      "threshold": 0.95,
+      "contrast_min": 25.0,
+      "max_views": 3,
+      "required_agreement": 2
+    },
+    "pairing": "same seed: same initial pose, wheel gains and per-position images across all policies",
+    "total_runs": 480,
+    "selection": "every seed included; persistent condition added as a limitation test with model and gate unchanged",
+    "checkpoints": {
+      "baseline_mlp.npz": "67ffdade02468f8646800fb5577ae6cc55337ad97f90bb8960817f8a4863ba2d",
+      "robust_mlp.npz": "dd7ec9fd331d231bc1ef2bb7bdf2fe6c19c32b0394b5cc287642ef657868b5ea"
+    }
+  },
+  "groups": [
+    {
+      "condition": "normal",
+      "mode": "baseline_once",
+      "n": 30,
+      "scenario_successes": 30,
+      "completed": 30,
+      "route_successes": 30,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 66.885,
+      "mean_observations": 3.0,
+      "mean_path_m": 14.190975597085934,
+      "success_wilson95": [
+        0.8864829086095221,
+        1
+      ]
+    },
+    {
+      "condition": "normal",
+      "mode": "robust_once",
+      "n": 30,
+      "scenario_successes": 30,
+      "completed": 30,
+      "route_successes": 30,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 66.885,
+      "mean_observations": 3.0,
+      "mean_path_m": 14.190975597085934,
+      "success_wilson95": [
+        0.8864829086095221,
+        1
+      ]
+    },
+    {
+      "condition": "normal",
+      "mode": "robust_gate",
+      "n": 30,
+      "scenario_successes": 30,
+      "completed": 30,
+      "route_successes": 30,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 66.885,
+      "mean_observations": 3.0,
+      "mean_path_m": 14.190975597085934,
+      "success_wilson95": [
+        0.8864829086095221,
+        1
+      ]
+    },
+    {
+      "condition": "normal",
+      "mode": "active_recheck",
+      "n": 30,
+      "scenario_successes": 30,
+      "completed": 30,
+      "route_successes": 30,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 79.21000000000001,
+      "mean_observations": 6.0,
+      "mean_path_m": 14.642160589496598,
+      "success_wilson95": [
+        0.8864829086095221,
+        1
+      ]
+    },
+    {
+      "condition": "variable",
+      "mode": "baseline_once",
+      "n": 30,
+      "scenario_successes": 2,
+      "completed": 30,
+      "route_successes": 2,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 45,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 59.52166666666666,
+      "mean_observations": 3.0,
+      "mean_path_m": 12.850637517755068,
+      "success_wilson95": [
+        0.01847663532769335,
+        0.21323817721072091
+      ]
+    },
+    {
+      "condition": "variable",
+      "mode": "robust_once",
+      "n": 30,
+      "scenario_successes": 18,
+      "completed": 30,
+      "route_successes": 18,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 14,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 66.23333333333333,
+      "mean_observations": 3.0,
+      "mean_path_m": 14.07399825577569,
+      "success_wilson95": [
+        0.42320052498273836,
+        0.7540960567391659
+      ]
+    },
+    {
+      "condition": "variable",
+      "mode": "robust_gate",
+      "n": 30,
+      "scenario_successes": 6,
+      "completed": 7,
+      "route_successes": 6,
+      "holds": 23,
+      "correct_holds": 0,
+      "wrong_decisions": 1,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 28.691666666666666,
+      "mean_observations": 2.0,
+      "mean_path_m": 6.01617059772585,
+      "success_wilson95": [
+        0.09504978102401235,
+        0.37306047381027446
+      ]
+    },
+    {
+      "condition": "variable",
+      "mode": "active_recheck",
+      "n": 30,
+      "scenario_successes": 30,
+      "completed": 30,
+      "route_successes": 30,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 85.95166666666667,
+      "mean_observations": 7.2,
+      "mean_path_m": 15.031311085570403,
+      "success_wilson95": [
+        0.8864829086095221,
+        1
+      ]
+    },
+    {
+      "condition": "covered",
+      "mode": "baseline_once",
+      "n": 30,
+      "scenario_successes": 0,
+      "completed": 30,
+      "route_successes": 0,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 34,
+      "covered_entries": 30,
+      "contacts": 0,
+      "mean_seconds": 55.669999999999995,
+      "mean_observations": 3.0,
+      "mean_path_m": 12.15082352032085,
+      "success_wilson95": [
+        0,
+        0.113517091390478
+      ]
+    },
+    {
+      "condition": "covered",
+      "mode": "robust_once",
+      "n": 30,
+      "scenario_successes": 0,
+      "completed": 30,
+      "route_successes": 0,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 10,
+      "covered_entries": 30,
+      "contacts": 0,
+      "mean_seconds": 71.05166666666666,
+      "mean_observations": 3.0,
+      "mean_path_m": 14.947951527551632,
+      "success_wilson95": [
+        0,
+        0.113517091390478
+      ]
+    },
+    {
+      "condition": "covered",
+      "mode": "robust_gate",
+      "n": 30,
+      "scenario_successes": 18,
+      "completed": 0,
+      "route_successes": 0,
+      "holds": 30,
+      "correct_holds": 18,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 17.078333333333333,
+      "mean_observations": 1.6,
+      "mean_path_m": 3.488019304672703,
+      "success_wilson95": [
+        0.42320052498273836,
+        0.7540960567391659
+      ]
+    },
+    {
+      "condition": "covered",
+      "mode": "active_recheck",
+      "n": 30,
+      "scenario_successes": 30,
+      "completed": 0,
+      "route_successes": 0,
+      "holds": 30,
+      "correct_holds": 30,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 43.193333333333314,
+      "mean_observations": 5.4,
+      "mean_path_m": 6.483488135384106,
+      "success_wilson95": [
+        0.8864829086095221,
+        1
+      ]
+    },
+    {
+      "condition": "persistent",
+      "mode": "baseline_once",
+      "n": 30,
+      "scenario_successes": 2,
+      "completed": 30,
+      "route_successes": 2,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 45,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 59.52166666666666,
+      "mean_observations": 3.0,
+      "mean_path_m": 12.850637517755068,
+      "success_wilson95": [
+        0.01847663532769335,
+        0.21323817721072091
+      ]
+    },
+    {
+      "condition": "persistent",
+      "mode": "robust_once",
+      "n": 30,
+      "scenario_successes": 18,
+      "completed": 30,
+      "route_successes": 18,
+      "holds": 0,
+      "correct_holds": 0,
+      "wrong_decisions": 14,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 66.23333333333333,
+      "mean_observations": 3.0,
+      "mean_path_m": 14.07399825577569,
+      "success_wilson95": [
+        0.42320052498273836,
+        0.7540960567391659
+      ]
+    },
+    {
+      "condition": "persistent",
+      "mode": "robust_gate",
+      "n": 30,
+      "scenario_successes": 6,
+      "completed": 7,
+      "route_successes": 6,
+      "holds": 23,
+      "correct_holds": 0,
+      "wrong_decisions": 1,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 28.691666666666666,
+      "mean_observations": 2.0,
+      "mean_path_m": 6.01617059772585,
+      "success_wilson95": [
+        0.09504978102401235,
+        0.37306047381027446
+      ]
+    },
+    {
+      "condition": "persistent",
+      "mode": "active_recheck",
+      "n": 30,
+      "scenario_successes": 6,
+      "completed": 6,
+      "route_successes": 6,
+      "holds": 24,
+      "correct_holds": 0,
+      "wrong_decisions": 0,
+      "covered_entries": 0,
+      "contacts": 0,
+      "mean_seconds": 36.385,
+      "mean_observations": 4.566666666666666,
+      "mean_path_m": 5.653513902156498,
+      "success_wilson95": [
+        0.09504978102401235,
+        0.37306047381027446
+      ]
+    }
+  ],
+  "elapsed_seconds": 15.145663182000021
+}

@@ -1,0 +1,153 @@
+{
+  "note": "Validation-only policy study. Default threshold .95 was specified in GateConfig before testing; not optimized on held-out trials.",
+  "seeds": [
+    62000,
+    62029
+  ],
+  "rows": [
+    {
+      "threshold": 0.8,
+      "condition": "normal",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 180
+    },
+    {
+      "threshold": 0.8,
+      "condition": "variable",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 206
+    },
+    {
+      "threshold": 0.8,
+      "condition": "covered",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 30,
+      "observations": 157
+    },
+    {
+      "threshold": 0.8,
+      "condition": "persistent",
+      "n": 30,
+      "scenario_successes": 10,
+      "unsafe_actions": 0,
+      "holds": 20,
+      "observations": 155
+    },
+    {
+      "threshold": 0.9,
+      "condition": "normal",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 180
+    },
+    {
+      "threshold": 0.9,
+      "condition": "variable",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 209
+    },
+    {
+      "threshold": 0.9,
+      "condition": "covered",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 30,
+      "observations": 158
+    },
+    {
+      "threshold": 0.9,
+      "condition": "persistent",
+      "n": 30,
+      "scenario_successes": 5,
+      "unsafe_actions": 0,
+      "holds": 25,
+      "observations": 132
+    },
+    {
+      "threshold": 0.95,
+      "condition": "normal",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 180
+    },
+    {
+      "threshold": 0.95,
+      "condition": "variable",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 216
+    },
+    {
+      "threshold": 0.95,
+      "condition": "covered",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 30,
+      "observations": 161
+    },
+    {
+      "threshold": 0.95,
+      "condition": "persistent",
+      "n": 30,
+      "scenario_successes": 4,
+      "unsafe_actions": 0,
+      "holds": 26,
+      "observations": 132
+    },
+    {
+      "threshold": 0.98,
+      "condition": "normal",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 180
+    },
+    {
+      "threshold": 0.98,
+      "condition": "variable",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 0,
+      "observations": 225
+    },
+    {
+      "threshold": 0.98,
+      "condition": "covered",
+      "n": 30,
+      "scenario_successes": 30,
+      "unsafe_actions": 0,
+      "holds": 30,
+      "observations": 162
+    },
+    {
+      "threshold": 0.98,
+      "condition": "persistent",
+      "n": 30,
+      "scenario_successes": 1,
+      "unsafe_actions": 0,
+      "holds": 29,
+      "observations": 126
+    }
+  ]
+}

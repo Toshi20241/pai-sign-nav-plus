@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "missions_audited": 480,
+  "observations_reinferred": 1673,
+  "unique_sensor_views": 762,
+  "matched_policy_sensor_identity": true,
+  "outcome_counters_recomputed": true,
+  "aggregate_tables_recomputed": true,
+  "closed_loop_replays": [
+    "demo_baseline",
+    "demo_once",
+    "demo_active",
+    "demo_hold"
+  ],
+  "bounded_wheel_acceleration": true,
+  "policy_interface": "image pixels only; no world or target label",
+  "seconds": 3.2148846990000948
+}

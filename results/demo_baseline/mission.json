@@ -1,0 +1,252 @@
+{
+  "schema_version": 2,
+  "result": {
+    "seed": 63000,
+    "mode": "baseline_once",
+    "condition": "variable",
+    "completed": true,
+    "held": false,
+    "stopped_at": null,
+    "contacts": 0,
+    "duration_seconds": 69.4,
+    "path_length_m": 14.655863531464135,
+    "choices": [
+      0,
+      2,
+      1
+    ],
+    "observations": 3,
+    "rechecks": 0,
+    "final_position": [
+      0.0006391154691450007,
+      10.809184428490646
+    ],
+    "max_wheel_acceleration": 32.0,
+    "true_labels": [
+      0,
+      2,
+      0
+    ],
+    "wrong_decisions": 1,
+    "evaluated_decisions": 3,
+    "covered_entries": 0,
+    "correct_hold": false,
+    "all_signs_followed": false,
+    "route_success": false,
+    "scenario_success": false,
+    "unsafe_actions": 1
+  },
+  "gate": {
+    "threshold": 0.95,
+    "contrast_min": 25.0,
+    "max_views": 3,
+    "required_agreement": 2
+  },
+  "events": [
+    {
+      "time": 0.0,
+      "event": "START",
+      "junction": 0
+    },
+    {
+      "time": 4.7,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 0
+    },
+    {
+      "time": 5.15,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 0,
+      "action": "GO",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.7562689185142517,
+        "probabilities": [
+          0.7562689185142517,
+          0.09112882614135742,
+          0.15260227024555206
+        ]
+      }
+    },
+    {
+      "time": 6.2,
+      "event": "COMMIT_BRANCH",
+      "junction": 0,
+      "choice": 0
+    },
+    {
+      "time": 28.6,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 1,
+      "view": 0
+    },
+    {
+      "time": 29.25,
+      "event": "OBSERVE",
+      "junction": 1,
+      "view": 0,
+      "action": "GO",
+      "prediction": {
+        "label": 2,
+        "name": "RIGHT",
+        "confidence": 0.9209872484207153,
+        "probabilities": [
+          0.033768430352211,
+          0.04524431750178337,
+          0.9209872484207153
+        ]
+      }
+    },
+    {
+      "time": 30.25,
+      "event": "COMMIT_BRANCH",
+      "junction": 1,
+      "choice": 2
+    },
+    {
+      "time": 52.55,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 2,
+      "view": 0
+    },
+    {
+      "time": 53.25,
+      "event": "OBSERVE",
+      "junction": 2,
+      "view": 0,
+      "action": "GO",
+      "prediction": {
+        "label": 1,
+        "name": "STRAIGHT",
+        "confidence": 0.8890102505683899,
+        "probabilities": [
+          0.02698361873626709,
+          0.8890102505683899,
+          0.08400607109069824
+        ]
+      }
+    },
+    {
+      "time": 54.3,
+      "event": "COMMIT_BRANCH",
+      "junction": 2,
+      "choice": 1
+    },
+    {
+      "time": 68.9,
+      "event": "GOAL_REACHED",
+      "junction": 3
+    },
+    {
+      "time": 69.4,
+      "event": "COMPLETE",
+      "junction": 3
+    }
+  ],
+  "observations": [
+    {
+      "index": 0,
+      "junction": 0,
+      "view": 0,
+      "time": 5.15,
+      "image": "camera/j1_v1.png",
+      "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+      "robot_pose": [
+        0.0019067797764555313,
+        0.8093299961365423,
+        1.5826011994017808
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.7562689185142517,
+        "probabilities": [
+          0.7562689185142517,
+          0.09112882614135742,
+          0.15260227024555206
+        ]
+      },
+      "contrast": 168.0,
+      "reliable": false,
+      "action": "GO",
+      "view_count": 1,
+      "choice": 0
+    },
+    {
+      "index": 1,
+      "junction": 1,
+      "view": 0,
+      "time": 29.25,
+      "image": "camera/j2_v1.png",
+      "image_sha256": "09ea12c7b723de930325dcc6187e5bbb4cd9cefdee266a97f579acfa03747119",
+      "robot_pose": [
+        -0.005037571011562746,
+        4.008543101512455,
+        1.5659783120537076
+      ],
+      "prediction": {
+        "label": 2,
+        "name": "RIGHT",
+        "confidence": 0.9209872484207153,
+        "probabilities": [
+          0.033768430352211,
+          0.04524431750178337,
+          0.9209872484207153
+        ]
+      },
+      "contrast": 170.0,
+      "reliable": false,
+      "action": "GO",
+      "view_count": 1,
+      "choice": 2
+    },
+    {
+      "index": 2,
+      "junction": 2,
+      "view": 0,
+      "time": 53.25,
+      "image": "camera/j3_v1.png",
+      "image_sha256": "905a9b69b54a135698c9b1852891740c63125719dd05e3c6a1b237fb0943c386",
+      "robot_pose": [
+        0.005960064451821096,
+        7.209183621857292,
+        1.5730647904276172
+      ],
+      "prediction": {
+        "label": 1,
+        "name": "STRAIGHT",
+        "confidence": 0.8890102505683899,
+        "probabilities": [
+          0.02698361873626709,
+          0.8890102505683899,
+          0.08400607109069824
+        ]
+      },
+      "contrast": 81.0,
+      "reliable": false,
+      "action": "GO",
+      "view_count": 1,
+      "choice": 1
+    }
+  ],
+  "simulation": {
+    "model": "no-slip planar differential drive with wheel lag and acceleration limit",
+    "integration_step_seconds": 0.01,
+    "control_step_seconds": 0.05,
+    "sensor": "synthetic sign patches at known observation positions; not a perspective camera",
+    "visibility": "variable: stress at view 0, standard at views 1/2; covered: panel 2 blank at every view; persistent: stress at all views",
+    "localization": "exact simulator pose",
+    "collision": "circle-rectangle overlap; stop on contact",
+    "wheel_radius_m": 0.055,
+    "axle_m": 0.29,
+    "wheel_tau_seconds": 0.12,
+    "wheel_acceleration_limit_rad_s2": 32.0,
+    "wheel_gain": [
+      1.0140181667086683,
+      0.9919733788937628
+    ]
+  }
+}

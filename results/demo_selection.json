@@ -1,0 +1,6 @@
+{
+  "variable_seed": 63000,
+  "covered_seed": 63000,
+  "rule": "first held-out seed where baseline fails and active succeeds; all test seeds retained in aggregate",
+  "role": "illustrative demonstration, not an unbiased performance estimate"
+}

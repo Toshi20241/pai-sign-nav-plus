@@ -1,0 +1,415 @@
+{
+  "schema_version": 2,
+  "result": {
+    "seed": 63000,
+    "mode": "active_recheck",
+    "condition": "covered",
+    "completed": false,
+    "held": true,
+    "stopped_at": 1,
+    "contacts": 0,
+    "duration_seconds": 49.6,
+    "path_length_m": 7.370109518921305,
+    "choices": [
+      0
+    ],
+    "observations": 6,
+    "rechecks": 4,
+    "final_position": [
+      0.18863693584508748,
+      4.352329731736593
+    ],
+    "max_wheel_acceleration": 32.0,
+    "true_labels": [
+      0,
+      2,
+      0
+    ],
+    "wrong_decisions": 0,
+    "evaluated_decisions": 1,
+    "covered_entries": 0,
+    "correct_hold": true,
+    "all_signs_followed": false,
+    "route_success": false,
+    "scenario_success": true,
+    "unsafe_actions": 0
+  },
+  "gate": {
+    "threshold": 0.95,
+    "contrast_min": 25.0,
+    "max_views": 3,
+    "required_agreement": 2
+  },
+  "events": [
+    {
+      "time": 0.0,
+      "event": "START",
+      "junction": 0
+    },
+    {
+      "time": 4.7,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 0
+    },
+    {
+      "time": 5.15,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 0,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.8287954330444336,
+        "probabilities": [
+          0.8287954330444336,
+          0.0028968367259949446,
+          0.16830772161483765
+        ]
+      }
+    },
+    {
+      "time": 6.2,
+      "event": "RECHECK_MOVE",
+      "junction": 0,
+      "view": 1
+    },
+    {
+      "time": 8.3,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 1
+    },
+    {
+      "time": 9.6,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 1,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.9999998807907104,
+        "probabilities": [
+          0.9999998807907104,
+          5.0049135503853724e-15,
+          8.848650878690023e-08
+        ]
+      }
+    },
+    {
+      "time": 10.65,
+      "event": "RECHECK_MOVE",
+      "junction": 0,
+      "view": 2
+    },
+    {
+      "time": 13.5,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 0,
+      "view": 2
+    },
+    {
+      "time": 15.15,
+      "event": "OBSERVE",
+      "junction": 0,
+      "view": 2,
+      "action": "GO",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          2.9352978110196853e-15,
+          2.6374020745123516e-09
+        ]
+      }
+    },
+    {
+      "time": 16.15,
+      "event": "COMMIT_BRANCH",
+      "junction": 0,
+      "choice": 0
+    },
+    {
+      "time": 37.85,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 1,
+      "view": 0
+    },
+    {
+      "time": 38.5,
+      "event": "OBSERVE",
+      "junction": 1,
+      "view": 0,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.77605140209198,
+        "probabilities": [
+          0.77605140209198,
+          0.04210321605205536,
+          0.18184541165828705
+        ]
+      }
+    },
+    {
+      "time": 39.55,
+      "event": "RECHECK_MOVE",
+      "junction": 1,
+      "view": 1
+    },
+    {
+      "time": 41.65,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 1,
+      "view": 1
+    },
+    {
+      "time": 42.95,
+      "event": "OBSERVE",
+      "junction": 1,
+      "view": 1,
+      "action": "RECHECK",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.7039982676506042,
+        "probabilities": [
+          0.7039982676506042,
+          0.01848827302455902,
+          0.27751344442367554
+        ]
+      }
+    },
+    {
+      "time": 44.0,
+      "event": "RECHECK_MOVE",
+      "junction": 1,
+      "view": 2
+    },
+    {
+      "time": 46.85,
+      "event": "AT_OBSERVATION_STATION",
+      "junction": 1,
+      "view": 2
+    },
+    {
+      "time": 48.5,
+      "event": "OBSERVE",
+      "junction": 1,
+      "view": 2,
+      "action": "HOLD",
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.8003228306770325,
+        "probabilities": [
+          0.8003228306770325,
+          0.07193071395158768,
+          0.12774638831615448
+        ]
+      }
+    },
+    {
+      "time": 49.55,
+      "event": "HOLD_REQUEST",
+      "junction": 1
+    },
+    {
+      "time": 49.6,
+      "event": "HELD",
+      "junction": 1
+    }
+  ],
+  "observations": [
+    {
+      "index": 0,
+      "junction": 0,
+      "view": 0,
+      "time": 5.15,
+      "image": "camera/j1_v1.png",
+      "image_sha256": "864bc453c8cd3020604e4a3678d6079aa026796702368af462d86c34230bd7c7",
+      "robot_pose": [
+        0.0019067797764555313,
+        0.8093299961365423,
+        1.5826011994017808
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.8287954330444336,
+        "probabilities": [
+          0.8287954330444336,
+          0.0028968367259949446,
+          0.16830772161483765
+        ]
+      },
+      "contrast": 168.0,
+      "reliable": false,
+      "action": "RECHECK",
+      "view_count": 1,
+      "choice": null
+    },
+    {
+      "index": 1,
+      "junction": 0,
+      "view": 1,
+      "time": 9.6,
+      "image": "camera/j1_v2.png",
+      "image_sha256": "cda8ef5e80e317a9fc73a9a07a60575946c25aa2e03a68fc4fbbd5a35bc8a0ee",
+      "robot_pose": [
+        -0.19644241987323158,
+        1.048706302235325,
+        1.5611743218845495
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.9999998807907104,
+        "probabilities": [
+          0.9999998807907104,
+          5.0049135503853724e-15,
+          8.848650878690023e-08
+        ]
+      },
+      "contrast": 209.0,
+      "reliable": true,
+      "action": "RECHECK",
+      "view_count": 2,
+      "choice": null
+    },
+    {
+      "index": 2,
+      "junction": 0,
+      "view": 2,
+      "time": 15.15,
+      "image": "camera/j1_v3.png",
+      "image_sha256": "952c45193e506d821289eb9d79b9ca24926fc4df504b450c46a2e8db06587799",
+      "robot_pose": [
+        0.18885512871525517,
+        1.1523786780644156,
+        1.5796299814767423
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 1.0,
+        "probabilities": [
+          1.0,
+          2.9352978110196853e-15,
+          2.6374020745123516e-09
+        ]
+      },
+      "contrast": 201.0,
+      "reliable": true,
+      "action": "GO",
+      "view_count": 3,
+      "choice": 0
+    },
+    {
+      "index": 3,
+      "junction": 1,
+      "view": 0,
+      "time": 38.5,
+      "image": "camera/j2_v1.png",
+      "image_sha256": "19c462adda9b0bf61e74a9ba1a549aa0125672b861a408b0f23a06cff212d560",
+      "robot_pose": [
+        -0.005037666447670345,
+        4.008542870391285,
+        1.5659783338529127
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.77605140209198,
+        "probabilities": [
+          0.77605140209198,
+          0.04210321605205536,
+          0.18184541165828705
+        ]
+      },
+      "contrast": 7.0,
+      "reliable": false,
+      "action": "RECHECK",
+      "view_count": 1,
+      "choice": null
+    },
+    {
+      "index": 4,
+      "junction": 1,
+      "view": 1,
+      "time": 42.95,
+      "image": "camera/j2_v2.png",
+      "image_sha256": "d781e2a7153befe5a58771a064560f64da588a02bb9d5be390546762a323de0f",
+      "robot_pose": [
+        -0.19772430967012353,
+        4.248485249988281,
+        1.5602458770230916
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.7039982676506042,
+        "probabilities": [
+          0.7039982676506042,
+          0.01848827302455902,
+          0.27751344442367554
+        ]
+      },
+      "contrast": 7.0,
+      "reliable": false,
+      "action": "RECHECK",
+      "view_count": 2,
+      "choice": null
+    },
+    {
+      "index": 5,
+      "junction": 1,
+      "view": 2,
+      "time": 48.5,
+      "image": "camera/j2_v3.png",
+      "image_sha256": "2819e213f1a6fd5c157c8e28d20e4f83c103804357a5fbd75ecb7728f890f477",
+      "robot_pose": [
+        0.18863678295832229,
+        4.3523418307465676,
+        1.5796340972691034
+      ],
+      "prediction": {
+        "label": 0,
+        "name": "LEFT",
+        "confidence": 0.8003228306770325,
+        "probabilities": [
+          0.8003228306770325,
+          0.07193071395158768,
+          0.12774638831615448
+        ]
+      },
+      "contrast": 7.0,
+      "reliable": false,
+      "action": "HOLD",
+      "view_count": 3,
+      "choice": null
+    }
+  ],
+  "simulation": {
+    "model": "no-slip planar differential drive with wheel lag and acceleration limit",
+    "integration_step_seconds": 0.01,
+    "control_step_seconds": 0.05,
+    "sensor": "synthetic sign patches at known observation positions; not a perspective camera",
+    "visibility": "variable: stress at view 0, standard at views 1/2; covered: panel 2 blank at every view; persistent: stress at all views",
+    "localization": "exact simulator pose",
+    "collision": "circle-rectangle overlap; stop on contact",
+    "wheel_radius_m": 0.055,
+    "axle_m": 0.29,
+    "wheel_tau_seconds": 0.12,
+    "wheel_acceleration_limit_rad_s2": 32.0,
+    "wheel_gain": [
+      1.0140181667086683,
+      0.9919733788937628
+    ]
+  }
+}
